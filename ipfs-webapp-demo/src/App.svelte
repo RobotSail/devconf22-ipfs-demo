@@ -2,6 +2,7 @@
   import svelteLogo from './assets/svelte.svg'
   import Counter from './lib/Counter.svelte'
 	import viteLogo from './assets/vite.svg'
+	import ipfsLogo from './assets/ipfs.svg'
 </script>
 
 <main>
@@ -12,8 +13,11 @@
     <a href="https://svelte.dev" target="_blank"> 
       <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
     </a>
+		<a href="https://ipfs.io" target="_blank">
+			<img src={ipfsLogo} class="logo ipfs" alt="IPFS Logo" />
+		</a>
   </div>
-  <h1>Vite + Svelte</h1>
+  <h1>Vite + Svelte + IPFS</h1>
 
   <div class="card">
     <Counter />
