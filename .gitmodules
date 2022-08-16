@@ -1,0 +1,3 @@
+[submodule "explore.ipld.io"]
+	path = explore.ipld.io
+	url = https://github.com/ipld/explore.ipld.io
