@@ -13,7 +13,7 @@
 
 <h3>Website de-duplication</h3>
 
-1. Build the website in the [ipfs-demo](./ipfs-demo/) directory.
+1. Build the website in the [ipfs-webapp-demo](./ipfs-webapp-demo/) directory.
 1. Upload the built website into IPFS and show that it is accessible at `https://ipfs.io/ipfs/<cid>`
 1. Change the contents of the website and re-upload to IPFS.
 1. Note the differences in files by inspecting the two CIDs via `explore.ipld.io`.
