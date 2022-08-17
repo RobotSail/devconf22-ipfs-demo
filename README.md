@@ -9,7 +9,7 @@
 
 <hr>
 
-<h2>Corgi Example</h2>
+<h2 align="center">Corgi Example</h2>
 <p align="center">
 	<img src="./photos/corgi.png" height="200px" width="200px">
 </p>
