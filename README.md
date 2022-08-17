@@ -9,6 +9,14 @@
 
 <hr>
 
+<h2>Corgi Example</h2>
+<p align="center">
+	<img src="./photos/corgi.png" height="200px" width="200px">
+	<code>QmbxJYrgzW27WUVd17iqTtomhRrCCf997QeKhjfiEU14bx</code>
+</p>
+
+<hr>
+
 <h2>Demo Outline</h2>
 
 <h3>Website de-duplication</h3>
