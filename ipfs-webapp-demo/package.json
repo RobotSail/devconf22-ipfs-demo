@@ -9,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
 		"build-ipfs": "vite build && ipfs add --recursive dist",
-		"add-to-ipfs": "ipfs add --recursive dist"
+		"add-to-ipfs": "ipfs add --recursive dist",
+		"build-ipns": "vite build && echo 'done, publishing to ipns'; ipfs add --recursive --quieter dist | ipfs name publish"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.1",
