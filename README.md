@@ -32,6 +32,10 @@
 
 <h3>Content reproviding</h3>
 
+This demo showcases bitswap's impact in providing content back to the network as it downloads.
+
+> This demo takes a bit of trial and error before the other node appears as a provider.
+
 1. Upload a piece of content `x` to IPFS from `ipfs-node-1`.
 1. Have another `ipfs-node-2` download `x`.
 1. Shut the `ipfs-node-1` EC2 instance down.
@@ -49,3 +53,12 @@ in order to resolve and update a website.
 1. Make a change to the website by checking out the `with-ipfs` branch of this repo.
 1. Build and re-publish the website to IPNS by running `npm run build-ipns`.
 1. Refresh the page and show that the website has been updated while maintaining the same IPNS name.
+
+<h3>IPFS pubsub demo</h3>
+
+> At the time of writing, pubsub remains an experimental feature which is not enabled in kubo by default.
+
+1. SSH into `ipfs-node-1` and `ipfs-node-2`.
+1. Have `ipfs-node-1` and `ipfs-node-2` both run `ipfs pubsub sub devconf-boston-2022`.
+1. From the host machine, run `echo "[${USER}@${HOST}] $(date '+%X') <message>"`
+1. View the results in `ipfs-node-1` and `ipfs-node-2`.
