@@ -49,9 +49,9 @@ in order to resolve and update a website.
 
 1. Build the website in the [ipfs-webapp-demo](./ipfs-webapp-demo/) directory using `npm run build-ipfs`.
 1. Show that the website can be located at `https://ipfs.io/ipfs/<cid>`
-1. Publish that website to IPNS using `ipfs name publish $CID`.
-1. Make a change to the website by checking out the `with-ipfs` branch of this repo.
-1. Build and re-publish the website to IPNS by running `npm run build-ipns`.
+1. Publish that website to IPNS using `ipfs name publish $CID`
+1. Make a change to the website by checking out the `with-ipfs` branch of this repo
+1. Build and re-publish the website to IPNS by running `npm run build-ipns`
 1. Refresh the page and show that the website has been updated while maintaining the same IPNS name.
 
 <h3>IPFS pubsub demo</h3>
