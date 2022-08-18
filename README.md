@@ -23,6 +23,7 @@
 
 <h3>Website de-duplication</h3>
 
+1. Run the explore IPLD application.
 1. Build the website in the [ipfs-webapp-demo](./ipfs-webapp-demo/) directory.
 1. Upload the built website into IPFS and show that it is accessible at `https://ipfs.io/ipfs/<cid>`
 1. Change the contents of the website and re-upload to IPFS.
@@ -34,6 +35,17 @@
 1. Upload a piece of content `x` to IPFS from `ipfs-node-1`.
 1. Have another `ipfs-node-2` download `x`.
 1. Shut the `ipfs-node-1` EC2 instance down.
-1. Find the providers of `x`
+1. Find the providers of `x`.
 1. Show that we can still download `x` on our host machine.
 
+<h3>IPNS Website Resolution</h3>
+
+The goal of this demo is to showcase how IPNS can be used
+in order to resolve and update a website.
+
+1. Build the website in the [ipfs-webapp-demo](./ipfs-webapp-demo/) directory using `npm run build-ipfs`.
+1. Show that the website can be located at `https://ipfs.io/ipfs/<cid>`
+1. Publish that website to IPNS using `ipfs name publish $CID`.
+1. Make a change to the website by checking out the `with-ipfs` branch of this repo.
+1. Build and re-publish the website to IPNS by running `npm run build-ipns`.
+1. Refresh the page and show that the website has been updated while maintaining the same IPNS name.
